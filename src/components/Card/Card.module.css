@@ -1,0 +1,49 @@
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.default {
+  background: white;
+}
+
+.elevated {
+  box-shadow: var(--shadow);
+}
+
+.elevated:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-4px);
+}
+
+.bordered {
+  border: 1px solid var(--border-color);
+}
+
+.bordered:hover {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(107, 70, 193, 0.1);
+}
+
+/* Card clicável */
+.card[role="button"] {
+  cursor: pointer;
+}
+
+.card[role="button"]:hover {
+  transform: translateY(-2px);
+}
+
+.card[role="button"]:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .card {
+    padding: 1rem;
+  }
+}

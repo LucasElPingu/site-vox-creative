@@ -1,0 +1,19 @@
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1;
+  padding-top: 70px; /* Altura do header fixo */
+  min-height: calc(100vh - 70px);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .main {
+    padding-top: 60px; /* Altura do header mobile */
+    min-height: calc(100vh - 60px);
+  }
+}

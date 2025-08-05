@@ -1,0 +1,106 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  gap: 0.5rem;
+  font-family: inherit;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none !important;
+}
+
+/* Variantes */
+.primary {
+  background: var(--primary-color);
+  color: white;
+}
+
+.primary:hover:not(:disabled) {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.secondary {
+  background: transparent;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+
+.secondary:hover:not(:disabled) {
+  background: var(--primary-color);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.accent {
+  background: var(--accent-color);
+  color: white;
+}
+
+.accent:hover:not(:disabled) {
+  background: #D97706;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.whatsapp {
+  background: #25D366;
+  color: white;
+}
+
+.whatsapp:hover:not(:disabled) {
+  background: #1DA851;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Tamanhos */
+.small {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+}
+
+.medium {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+}
+
+.large {
+  padding: 1rem 2rem;
+  font-size: 1.125rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .button {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .large {
+    padding: 0.875rem 1.75rem;
+    font-size: 1rem;
+  }
+  
+  .medium {
+    padding: 0.625rem 1.25rem;
+    font-size: 0.9rem;
+  }
+  
+  .small {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+}

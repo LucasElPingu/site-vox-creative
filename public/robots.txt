@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://voxcreative.com.br/sitemap.xml
+
+# Disallow admin areas (if any)
+Disallow: /admin/
+Disallow: /api/
+
+# Allow all image assets
+Allow: /images/
+Allow: /_next/static/
+Allow: /_next/image/
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
