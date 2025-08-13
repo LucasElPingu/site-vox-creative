@@ -1,10 +1,10 @@
 'use client';
 
-import React from 'react';
 import Head from 'next/head';
-import Layout from '../../components/Layout/Layout';
-import Card from '../../components/Card/Card';
+import React from 'react';
 import Button from '../../components/Button/Button';
+import Card from '../../components/Card/Card';
+import Layout from '../../components/Layout/Layout';
 import styles from './blog.module.css';
 
 /**
@@ -154,7 +154,7 @@ export default function Blog() {
         <section className={styles.articlesSection}>
           <div className={styles.container}>
             <div className={styles.articlesGrid}>
-              {filteredArticles.map((article, index) => (
+              {filteredArticles.map((article) => (
                 <Card key={article.id} variant="elevated" className={styles.articleCard}>
                   <div className={styles.articleHeader}>
                     <div className={styles.articleIcon}>{article.image}</div>

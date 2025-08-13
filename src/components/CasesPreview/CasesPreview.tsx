@@ -1,7 +1,5 @@
-import React from 'react';
-import Link from 'next/link';
-import Card from '../Card/Card';
 import Button from '../Button/Button';
+import Card from '../Card/Card';
 import styles from './CasesPreview.module.css';
 
 /**
@@ -71,7 +69,7 @@ export default function CasesPreview() {
 
         {/* Grid de cases */}
         <div className={styles.casesGrid}>
-          {cases.map((case_, index) => (
+          {cases.map((case_) => (
             <Card 
               key={case_.id}
               variant="elevated" 
