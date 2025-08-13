@@ -1,0 +1,16 @@
+Social Sharing Image Requirements for VOX CREATIVE
+
+File: og-image-vox.jpg
+Dimensions: 1200x630 pixels
+Format: JPG
+
+Content:
+- VOX CREATIVE logo/text prominently displayed
+- Minimalist design with color palette: #918590, #757a80, #1b1e25, #bd9d73, #434754
+- Tagline: "Agência especializada em jovens empreendedores"
+- Clean, modern design reflecting the minimalist brand
+- Professional appearance suitable for social media sharing
+
+Background: Gradient using the brand colors
+Text: Clean, modern font with good contrast
+Layout: Centered with plenty of white space for clean, minimalist look

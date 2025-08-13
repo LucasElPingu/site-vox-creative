@@ -12,8 +12,8 @@ export default function WhatsAppButton() {
   const [showTooltip, setShowTooltip] = useState(false);
 
   // Número do WhatsApp (formato brasileiro)
-  const whatsappNumber = '5511999999999';
-  const message = 'Olá! Gostaria de saber mais sobre os serviços da Vox Creative.';
+  const whatsappNumber = '5511952063578';
+  const message = 'Olá! Gostaria de saber mais sobre os serviços da VOX CREATIVE.';
   
   // URL do WhatsApp
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;

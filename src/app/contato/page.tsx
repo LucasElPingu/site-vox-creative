@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useState } from 'react';
-import Head from 'next/head';
 import Layout from '../../components/Layout/Layout';
 import Card from '../../components/Card/Card';
 import Button from '../../components/Button/Button';
@@ -33,36 +32,12 @@ export default function Contato() {
 
   const teamContacts = [
     {
-      name: 'Eduarda Cotrim',
-      position: 'Commercial Director',
-      city: 'Embu das Artes - SP',
-      whatsapp: '5511999999999',
+      name: 'Eduarda Magalhães',
+      position: 'CEO & Founder',
+      city: 'São Paulo - SP',
+      whatsapp: '5511952063578',
       image: '👩‍💼',
-      specialty: 'Estratégia comercial e relacionamento'
-    },
-    {
-      name: 'Thatiane Camargo',
-      position: 'Head of Design',
-      city: 'Goiânia - GO',
-      whatsapp: '5562999999999',
-      image: '👩‍🎨',
-      specialty: 'Design e identidade visual'
-    },
-    {
-      name: 'Amanda Silva',
-      position: 'Social Media Manager',
-      city: 'Guanambi - BA',
-      whatsapp: '5577999999999',
-      image: '👩‍💻',
-      specialty: 'Social media e conteúdo'
-    },
-    {
-      name: 'Carlos Santos',
-      position: 'Atendimento Nacional',
-      city: 'Recife - PE',
-      whatsapp: '5581999999999',
-      image: '👨‍💼',
-      specialty: 'Suporte e atendimento'
+      specialty: 'Liderança e estratégia empresarial'
     }
   ];
 
@@ -102,13 +77,7 @@ export default function Contato() {
   };
 
   return (
-    <>
-      <Head>
-        <title>Contato - Fale Conosco | Vox Creative</title>
-        <meta name="description" content="Entre em contato com a Vox Creative. Formulário de contato, WhatsApp direto e informações da nossa equipe em 4 cidades do Brasil." />
-      </Head>
-      
-      <Layout>
+    <Layout>
         {/* Hero */}
         <section className={styles.heroSection}>
           <div className={styles.container}>
@@ -121,8 +90,8 @@ export default function Contato() {
                 <span className={styles.highlight}>seu projeto</span>?
               </h1>
               <p className={styles.heroDescription}>
-                Estamos prontos para ajudar sua marca a crescer no digital. 
-                Entre em contato e descubra como podemos trabalhar juntos!
+                Especializada em jovens empreendedores, estamos prontos para
+                transformar sua idéia em uma marca de sucesso. Vamos conversar!
               </p>
             </div>
           </div>
@@ -262,7 +231,8 @@ export default function Contato() {
                       <div className={styles.contactIcon}>📧</div>
                       <div>
                         <strong>E-mail</strong>
-                        <p>contato@voxcreative.com.br</p>
+                        <p>thatiane.voxcreative@gmail.com</p>
+                        <p>vox.creativeagencia@gmail.com</p>
                       </div>
                     </div>
                     
@@ -270,15 +240,15 @@ export default function Contato() {
                       <div className={styles.contactIcon}>📱</div>
                       <div>
                         <strong>WhatsApp</strong>
-                        <p>(11) 9 9999-9999</p>
+                        <p>(11) 95206-3578</p>
                       </div>
                     </div>
                     
                     <div className={styles.contactItem}>
                       <div className={styles.contactIcon}>🌍</div>
                       <div>
-                        <strong>Atendimento</strong>
-                        <p>Todo o Brasil</p>
+                        <strong>Especialidade</strong>
+                        <p>Jovens Empreendedores</p>
                       </div>
                     </div>
                     
@@ -293,8 +263,8 @@ export default function Contato() {
 
                   <div className={styles.quickContact}>
                     <h4>Contato Rápido</h4>
-                    <Button 
-                      href="https://wa.me/5511999999999" 
+                    <Button
+                      href="https://wa.me/5511952063578"
                       variant="whatsapp"
                       size="large"
                       target="_blank"
@@ -333,11 +303,11 @@ export default function Contato() {
             <div className={styles.sectionHeader}>
               <h2 className={styles.sectionTitle}>
                 Fale diretamente com nossa{' '}
-                <span className={styles.highlight}>equipe</span>
+                <span className={styles.highlight}>CEO</span>
               </h2>
               <p className={styles.sectionDescription}>
-                Cada membro da nossa equipe está localizado em uma cidade diferente, 
-                garantindo atendimento personalizado em todo o Brasil.
+                Atendimento personalizado e direto com Eduarda Magalhães,
+                CEO da VOX CREATIVE, especializada em jovens empreendedores.
               </p>
             </div>
 
@@ -370,22 +340,21 @@ export default function Contato() {
           <div className={styles.container}>
             <div className={styles.citiesContent}>
               <h3 className={styles.citiesTitle}>
-                Atendimento Nacional com Presença Local
+                Especializada em Jovens Empreendedores
               </h3>
               <p className={styles.citiesDescription}>
-                Estamos presentes em 4 cidades estratégicas, oferecendo atendimento 
-                personalizado com proximidade regional e visão nacional.
+                Focamos no desenvolvimento de marcas para jovens empreendedores
+                que buscam identidade visual marcante e presença digital de impacto.
               </p>
               <div className={styles.citiesList}>
-                <div className={styles.city}>📍 Embu das Artes - SP</div>
-                <div className={styles.city}>📍 Goiânia - GO</div>
-                <div className={styles.city}>📍 Guanambi - BA</div>
-                <div className={styles.city}>📍 Recife - PE</div>
+                <div className={styles.city}>🎨 Design Minimalista</div>
+                <div className={styles.city}>📊 Estratégias Eficazes</div>
+                <div className={styles.city}>🎯 Resultados Reais</div>
+                <div className={styles.city}>🚀 Atendimento Rápido</div>
               </div>
             </div>
           </div>
         </section>
-      </Layout>
-    </>
+    </Layout>
   );
 }

@@ -208,7 +208,7 @@ export default function Depoimentos() {
                     </div>
                     
                     <blockquote className={styles.testimonialText}>
-                      "{testimonial.content}"
+                      &ldquo;{testimonial.content}&rdquo;
                     </blockquote>
                     
                     <div className={styles.result}>

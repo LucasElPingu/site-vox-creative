@@ -1,12 +1,16 @@
 import React from 'react';
-import Head from 'next/head';
 import Layout from '../../components/Layout/Layout';
 import Card from '../../components/Card/Card';
 import Button from '../../components/Button/Button';
 import styles from './sobre.module.css';
 
+export const metadata = {
+  title: "Sobre Nós - Nossa História e Valores",
+  description: "Conheça a VOX CREATIVE e nossa CEO Eduarda Magalhães. Agência especializada em jovens empreendedores com design minimalista e estratégias eficazes.",
+};
+
 /**
- * Página Sobre - História, missão, visão, valores e diferenciais da Vox Creative
+ * Página Sobre - História, missão, visão, valores e diferenciais da VOX CREATIVE
  */
 export default function Sobre() {
   const values = [
@@ -91,13 +95,7 @@ export default function Sobre() {
   ];
 
   return (
-    <>
-      <Head>
-        <title>Sobre Nós - Nossa História e Valores | Vox Creative</title>
-        <meta name="description" content="Conheça a história da Vox Creative, nossa missão, visão, valores e a equipe que trabalha para fazer sua marca crescer no digital." />
-      </Head>
-      
-      <Layout>
+    <Layout>
         {/* Hero da página */}
         <section className={styles.heroSection}>
           <div className={styles.container}>
@@ -151,22 +149,22 @@ export default function Sobre() {
                   <div className={styles.timelineItem}>
                     <div className={styles.timelineIcon}>🚀</div>
                     <div className={styles.timelineContent}>
-                      <h4>2022</h4>
-                      <p>Fundação em Embu das Artes</p>
-                    </div>
-                  </div>
-                  <div className={styles.timelineItem}>
-                    <div className={styles.timelineIcon}>🌍</div>
-                    <div className={styles.timelineContent}>
                       <h4>2023</h4>
-                      <p>Expansão Nacional</p>
+                      <p>Fundação por Eduarda</p>
                     </div>
                   </div>
                   <div className={styles.timelineItem}>
-                    <div className={styles.timelineIcon}>📈</div>
+                    <div className={styles.timelineIcon}>🎨</div>
                     <div className={styles.timelineContent}>
                       <h4>2024</h4>
-                      <p>100+ Clientes Atendidos</p>
+                      <p>Foco em Jovens Empreendedores</p>
+                    </div>
+                  </div>
+                  <div className={styles.timelineItem}>
+                    <div className={styles.timelineIcon}>⭐</div>
+                    <div className={styles.timelineContent}>
+                      <h4>2024</h4>
+                      <p>Design Minimalista</p>
                     </div>
                   </div>
                 </div>
@@ -303,7 +301,6 @@ export default function Sobre() {
             </div>
           </div>
         </section>
-      </Layout>
-    </>
+    </Layout>
   );
 }

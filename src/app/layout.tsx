@@ -9,43 +9,45 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Vox Creative - Agência de Marketing Digital e Design",
-    template: "%s | Vox Creative"
+    default: "VOX CREATIVE - Agência de Marketing Digital e Design",
+    template: "%s | VOX CREATIVE"
   },
-  description: "Agência nacional de marketing digital com sede em 4 cidades. Social Media, Design Estratégico, Tráfego Pago e Impressos Gráficos. Sua marca com identidade, estratégia e resultado real.",
+  description: "VOX CREATIVE é uma agência de marketing digital focada em jovens empreendedores e empresas. Design minimalista, estratégias eficazes e resultados reais para sua marca.",
   keywords: [
+    "vox creative",
     "agência de marketing digital",
-    "social media",
-    "design estratégico", 
-    "tráfego pago",
-    "impressos gráficos",
+    "jovens empreendedores",
+    "design minimalista",
+    "marketing digital",
     "identidade visual",
-    "marketing digital"
+    "eduarda magalhães",
+    "portfólio",
+    "branding"
   ],
-  authors: [{ name: "Vox Creative" }],
-  creator: "Vox Creative",
-  publisher: "Vox Creative",
+  authors: [{ name: "VOX CREATIVE", url: "https://www.landiva.com.br/" }],
+  creator: "VOX CREATIVE",
+  publisher: "VOX CREATIVE",
   openGraph: {
     type: "website",
     locale: "pt_BR",
-    url: "https://voxcreative.com.br",
-    siteName: "Vox Creative",
-    title: "Vox Creative - Agência de Marketing Digital e Design",
-    description: "Sua marca com identidade, estratégia e resultado real. Agência nacional com atendimento especializado.",
+    url: "https://www.landiva.com.br/",
+    siteName: "VOX CREATIVE",
+    title: "VOX CREATIVE - Agência de Marketing Digital e Design",
+    description: "Agência de marketing digital focada em jovens empreendedores. Design minimalista e estratégias eficazes para sua marca.",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/og-image-vox.jpg",
         width: 1200,
         height: 630,
-        alt: "Vox Creative - Agência de Marketing Digital",
+        alt: "VOX CREATIVE - Agência de Marketing Digital",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Vox Creative - Agência de Marketing Digital e Design",
-    description: "Sua marca com identidade, estratégia e resultado real.",
-    images: ["/og-image.jpg"],
+    title: "VOX CREATIVE - Agência de Marketing Digital e Design",
+    description: "Design minimalista e estratégias eficazes para jovens empreendedores.",
+    images: ["/og-image-vox.jpg"],
   },
   robots: {
     index: true,
@@ -76,7 +78,7 @@ export default function RootLayout({
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="manifest" href="/site.webmanifest" />
-        <meta name="theme-color" content="#6B46C1" />
+        <meta name="theme-color" content="#918590" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
       <body className={inter.className}>

@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 import Button from '../Button/Button';
 import styles from './Hero.module.css';
 
@@ -15,54 +14,54 @@ export default function Hero() {
           {/* Conteúdo principal */}
           <div className={styles.content}>
             <div className={styles.badge}>
-              🚀 Agência Nacional Digital
+              ✨ Agência de Marketing Digital
             </div>
             
             <h1 className={styles.title}>
-              Sua marca com{' '}
-              <span className={styles.highlight}>identidade</span>,{' '}
-              <span className={styles.highlight}>estratégia</span> e{' '}
-              <span className={styles.highlight}>resultado real</span>.
+              Transformamos{' '}
+              <span className={styles.highlight}>jovens empreendedores</span>{' '}
+              em{' '}
+              <span className={styles.highlight}>marcas de sucesso</span>.
             </h1>
             
             <p className={styles.description}>
-              Somos uma agência nacional de marketing digital com sede em 4 cidades. 
-              Oferecemos Social Media, Design Estratégico, Tráfego Pago e Impressos Gráficos 
-              para fazer sua marca se destacar no mercado.
+              Design minimalista, estratégias eficazes e resultados reais.
+              Especializada em jovens empreendedores e empresas que buscam
+              identidade visual marcante e presença digital de impacto.
             </p>
             
             <div className={styles.actions}>
-              <Button 
-                href="/servicos/agencia" 
-                variant="primary" 
+              <Button
+                href="/contato"
+                variant="primary"
                 size="large"
-                ariaLabel="Ver planos da agência de marketing digital"
+                ariaLabel="Falar conosco para iniciar seu projeto"
               >
-                📋 Ver Planos da Agência
+                💬 Falar Conosco
               </Button>
-              
-              <Button 
-                href="/servicos/grafica" 
-                variant="secondary" 
+
+              <Button
+                href="/servicos"
+                variant="secondary"
                 size="large"
-                ariaLabel="Solicitar orçamento para produtos gráficos"
+                ariaLabel="Conhecer nossos serviços"
               >
-                🖨️ Solicitar Orçamento Gráfico
+                🎯 Nossos Serviços
               </Button>
             </div>
             
             <div className={styles.stats}>
               <div className={styles.stat}>
-                <span className={styles.statNumber}>4+</span>
-                <span className={styles.statLabel}>Cidades</span>
+                <span className={styles.statNumber}>50+</span>
+                <span className={styles.statLabel}>Projetos</span>
               </div>
               <div className={styles.stat}>
-                <span className={styles.statNumber}>100+</span>
-                <span className={styles.statLabel}>Clientes</span>
+                <span className={styles.statNumber}>100%</span>
+                <span className={styles.statLabel}>Satisfação</span>
               </div>
               <div className={styles.stat}>
-                <span className={styles.statNumber}>2+</span>
-                <span className={styles.statLabel}>Anos</span>
+                <span className={styles.statNumber}>24h</span>
+                <span className={styles.statLabel}>Resposta</span>
               </div>
             </div>
           </div>

@@ -34,18 +34,13 @@ export default function Header() {
     { href: '/', label: 'Home' },
     { href: '/sobre', label: 'Sobre' },
     {
-      href: '#',
+      href: '/servicos',
       label: 'Serviços',
       submenu: [
         { href: '/servicos/agencia', label: 'Agência' },
         { href: '/servicos/grafica', label: 'Gráfica' }
       ]
     },
-    { href: '/planos', label: 'Planos' },
-    { href: '/cases', label: 'Cases' },
-    { href: '/depoimentos', label: 'Depoimentos' },
-    { href: '/time', label: 'Time' },
-    { href: '/blog', label: 'Blog' },
     { href: '/contato', label: 'Contato' }
   ];
 
@@ -54,9 +49,9 @@ export default function Header() {
       <div className={styles.container}>
         <div className={styles.headerContent}>
           {/* Logo */}
-          <Link href="/" className={styles.logo} aria-label="Vox Creative - Página inicial">
-            <span className={styles.logoText}>Vox</span>
-            <span className={styles.logoAccent}>Creative</span>
+          <Link href="/" className={styles.logo} aria-label="VOX CREATIVE - Página inicial">
+            <span className={styles.logoText}>VOX</span>
+            <span className={styles.logoAccent}>CREATIVE</span>
           </Link>
 
           {/* Navegação Desktop */}

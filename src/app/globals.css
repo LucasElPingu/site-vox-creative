@@ -16,21 +16,22 @@ body {
   background: #ffffff;
 }
 
-/* Variáveis CSS para cores da marca */
+/* Variáveis CSS para cores da marca - Nova paleta minimalista */
 :root {
-  --primary-color: #6B46C1; /* Roxo principal */
-  --primary-dark: #553C9A;
-  --primary-light: #8B5CF6;
-  --secondary-color: #EC4899; /* Rosa */
-  --accent-color: #F59E0B; /* Amarelo/Laranja */
-  --text-primary: #1F2937;
-  --text-secondary: #6B7280;
-  --text-light: #9CA3AF;
+  --primary-color: #918590; /* Lilás acinzentado principal */
+  --primary-dark: #757a80; /* Cinza médio */
+  --primary-light: #bd9d73; /* Bege dourado */
+  --secondary-color: #434754; /* Cinza escuro */
+  --accent-color: #bd9d73; /* Bege dourado para destaques */
+  --text-primary: #1b1e25; /* Preto suave */
+  --text-secondary: #434754; /* Cinza escuro */
+  --text-light: #757a80; /* Cinza médio */
   --background: #FFFFFF;
-  --background-light: #F9FAFB;
-  --border-color: #E5E7EB;
-  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --background-light: #F8F9FA;
+  --background-dark: #1b1e25;
+  --border-color: #E8E9EB;
+  --shadow: 0 4px 6px -1px rgba(27, 30, 37, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(27, 30, 37, 0.15);
 }
 
 /* Tipografia */
@@ -111,7 +112,7 @@ a {
 }
 
 .btn-accent:hover {
-  background: #D97706;
+  background: #a6834e;
   transform: translateY(-2px);
 }
 

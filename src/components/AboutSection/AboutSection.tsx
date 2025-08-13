@@ -10,24 +10,24 @@ import styles from './AboutSection.module.css';
 export default function AboutSection() {
   const highlights = [
     {
-      icon: '🏢',
-      title: 'Agência Nacional',
-      description: 'Presença em 4 cidades estratégicas'
+      icon: '🎆',
+      title: 'Jovens Empreendedores',
+      description: 'Especializada no público jovem'
     },
     {
-      icon: '💼',
-      title: 'Sede Digital',
-      description: 'Atendimento 100% online e presencial'
+      icon: '🎨',
+      title: 'Design Minimalista',
+      description: 'Estilo moderno e clean'
     },
     {
       icon: '🎯',
-      title: 'Foco em Resultados',
-      description: 'Estratégias baseadas em dados reais'
+      title: 'Resultados Reais',
+      description: 'Estratégias que geram impacto'
     },
     {
-      icon: '👥',
-      title: 'Time Especializado',
-      description: 'Profissionais qualificados em cada área'
+      icon: '⚡',
+      title: 'Atendimento Rápido',
+      description: 'Resposta em até 24 horas'
     }
   ];
 
@@ -42,31 +42,30 @@ export default function AboutSection() {
             </div>
             
             <h2 className={styles.title}>
-              Agência nacional com{' '}
-              <span className={styles.highlight}>sede digital</span>{' '}
-              em 4 cidades
+              Especializada em{' '}
+              <span className={styles.highlight}>jovens empreendedores</span>{' '}
+              com visão de futuro
             </h2>
             
             <p className={styles.description}>
-              A <strong>Vox Creative</strong> é uma agência de marketing digital que nasceu 
-              com o propósito de democratizar o acesso a estratégias de marketing de alta 
-              qualidade. Com sede em <strong>Embu das Artes (SP)</strong>, <strong>Goiânia (GO)</strong>, 
-              <strong>Guanambi (BA)</strong> e <strong>Recife (PE)</strong>, oferecemos 
-              atendimento nacional com a proximidade regional.
+              A <strong>VOX CREATIVE</strong> é liderada por <strong>Eduarda Magalhães</strong>,
+              uma agência focada em transformar jovens empreendedores em marcas de sucesso.
+              Nosso diferencial está no design minimalista e moderno, aliado a estratégias
+              eficazes que geram resultados reais.
             </p>
-            
+
             <p className={styles.description}>
-              Nossa missão é simples: <strong>transformar marcas em referências</strong> nos 
-              seus segmentos através de identidade visual marcante, estratégia digital eficiente 
-              e resultados mensuráveis.
+              Acreditamos que cada jovem empreendedor merece uma <strong>identidade visual marcante</strong>
+              e uma <strong>presença digital de impacto</strong>. Trabalhamos com dedicação para
+              transformar suas ideias em marcas que se destacam no mercado.
             </p>
             
             <div className={styles.actions}>
               <Button href="/sobre" variant="primary" size="large">
-                📖 Nossa História Completa
+                👩‍💼 Conheça a CEO
               </Button>
-              <Button href="/time" variant="secondary" size="large">
-                👥 Conheça o Time
+              <Button href="/contato" variant="secondary" size="large">
+                💬 Falar Conosco
               </Button>
             </div>
           </div>
@@ -95,24 +94,24 @@ export default function AboutSection() {
         <div className={styles.statsSection}>
           <div className={styles.statsGrid}>
             <div className={styles.stat}>
-              <span className={styles.statNumber}>4</span>
-              <span className={styles.statLabel}>Cidades</span>
-              <span className={styles.statDescription}>Presença nacional</span>
-            </div>
-            <div className={styles.stat}>
-              <span className={styles.statNumber}>100+</span>
-              <span className={styles.statLabel}>Clientes</span>
-              <span className={styles.statDescription}>Marcas atendidas</span>
-            </div>
-            <div className={styles.stat}>
-              <span className={styles.statNumber}>500+</span>
+              <span className={styles.statNumber}>50+</span>
               <span className={styles.statLabel}>Projetos</span>
-              <span className={styles.statDescription}>Entregues com sucesso</span>
+              <span className={styles.statDescription}>Entregues com qualidade</span>
             </div>
             <div className={styles.stat}>
-              <span className={styles.statNumber}>2+</span>
-              <span className={styles.statLabel}>Anos</span>
-              <span className={styles.statDescription}>De experiência</span>
+              <span className={styles.statNumber}>100%</span>
+              <span className={styles.statLabel}>Satisfação</span>
+              <span className={styles.statDescription}>Clientes satisfeitos</span>
+            </div>
+            <div className={styles.stat}>
+              <span className={styles.statNumber}>24h</span>
+              <span className={styles.statLabel}>Resposta</span>
+              <span className={styles.statDescription}>Atendimento rápido</span>
+            </div>
+            <div className={styles.stat}>
+              <span className={styles.statNumber}>1</span>
+              <span className={styles.statLabel}>Objetivo</span>
+              <span className={styles.statDescription}>Seu sucesso</span>
             </div>
           </div>
         </div>

@@ -25,8 +25,8 @@ export default function PoliticaPrivacidade() {
               <section className={styles.section}>
                 <h2>1. Informações Gerais</h2>
                 <p>
-                  Esta Política de Privacidade descreve como a Vox Creative ("nós", "nossa" ou "empresa") 
-                  coleta, usa, armazena e protege as informações pessoais dos usuários ("você" ou "usuário") 
+                  Esta Política de Privacidade descreve como a Vox Creative (&ldquo;nós&rdquo;, &ldquo;nossa&rdquo; ou &ldquo;empresa&rdquo;)
+                  coleta, usa, armazena e protege as informações pessoais dos usuários (&ldquo;você&rdquo; ou &ldquo;usuário&rdquo;) 
                   de nosso site e serviços.
                 </p>
               </section>
