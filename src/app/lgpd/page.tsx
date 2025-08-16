@@ -1,10 +1,10 @@
 'use client';
 
-import Head from 'next/head';
 import React, { useState } from 'react';
-import Button from '../../components/Button/Button';
-import Card from '../../components/Card/Card';
+import Head from 'next/head';
 import Layout from '../../components/Layout/Layout';
+import Card from '../../components/Card/Card';
+import Button from '../../components/Button/Button';
 import styles from './lgpd.module.css';
 
 /**

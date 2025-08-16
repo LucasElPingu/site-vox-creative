@@ -1,10 +1,10 @@
 'use client';
 
+import React, { useState } from 'react';
 import Head from 'next/head';
-import { useState } from 'react';
-import Button from '../../components/Button/Button';
-import Card from '../../components/Card/Card';
 import Layout from '../../components/Layout/Layout';
+import Card from '../../components/Card/Card';
+import Button from '../../components/Button/Button';
 import styles from './faq.module.css';
 
 /**

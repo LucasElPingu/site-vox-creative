@@ -188,7 +188,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor i
           <ul>
             <li><strong>Fotos:</strong> Envie fotos em formato JPG/PNG, preferencialmente quadradas (500x500px), para substituir os placeholders</li>
             <li><strong>Textos:</strong> Os cards marcados como &ldquo;Aguardando conteúdo&rdquo; serão atualizados com os textos da Thatiane e Eduarda</li>
-            <li><strong>Atualização:</strong> Basta substituir a propriedade <code>image: null</code> pela URL da foto no código</li>
           </ul>
         </div>
       </div>
