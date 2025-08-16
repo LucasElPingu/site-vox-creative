@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     default: "VOX CREATIVE - Agência de Marketing Digital e Design",
     template: "%s | VOX CREATIVE"
   },
-  description: "VOX CREATIVE é uma agência de marketing digital focada em jovens empreendedores e empresas. Design minimalista, estratégias eficazes e resultados reais para sua marca.",
+  description: "VOX CREATIVE - Agência de marketing digital especializada em jovens empreendedores. Equipe global com Larissa Soares, Laís Reis e mais. Design minimalista e estratégias eficazes.",
   keywords: [
     "vox creative",
     "agência de marketing digital",
@@ -20,9 +20,16 @@ export const metadata: Metadata = {
     "design minimalista",
     "marketing digital",
     "identidade visual",
-    "eduarda magalhães",
-    "portfólio",
-    "branding"
+    "larissa soares",
+    "laís reis",
+    "thatiane",
+    "eduarda",
+    "head comercial",
+    "design strategist",
+    "web3",
+    "inteligência artificial",
+    "branding",
+    "portfólio"
   ],
   authors: [{ name: "VOX CREATIVE", url: "https://www.landiva.com.br/" }],
   creator: "VOX CREATIVE",
@@ -33,7 +40,7 @@ export const metadata: Metadata = {
     url: "https://www.landiva.com.br/",
     siteName: "VOX CREATIVE",
     title: "VOX CREATIVE - Agência de Marketing Digital e Design",
-    description: "Agência de marketing digital focada em jovens empreendedores. Design minimalista e estratégias eficazes para sua marca.",
+    description: "Agência de marketing digital especializada em jovens empreendedores. Equipe global com visão estratégica e design minimalista.",
     images: [
       {
         url: "/og-image-vox.jpg",
@@ -73,6 +80,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <head>
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />

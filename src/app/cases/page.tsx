@@ -1,10 +1,10 @@
 'use client';
 
-import Head from 'next/head';
 import React from 'react';
-import Button from '../../components/Button/Button';
-import Card from '../../components/Card/Card';
+import Head from 'next/head';
 import Layout from '../../components/Layout/Layout';
+import Card from '../../components/Card/Card';
+import Button from '../../components/Button/Button';
 import styles from './cases.module.css';
 
 /**
@@ -212,7 +212,7 @@ export default function Cases() {
         <section className={styles.casesSection}>
           <div className={styles.container}>
             <div className={styles.casesGrid}>
-              {filteredCases.map((case_) => (
+              {filteredCases.map((case_, index) => (
                 <Card key={case_.id} variant="elevated" className={styles.caseCard}>
                   <div 
                     className={styles.caseHeader}

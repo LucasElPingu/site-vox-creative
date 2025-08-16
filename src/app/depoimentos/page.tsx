@@ -1,7 +1,8 @@
+import React from 'react';
 import Head from 'next/head';
-import Button from '../../components/Button/Button';
-import Card from '../../components/Card/Card';
 import Layout from '../../components/Layout/Layout';
+import Card from '../../components/Card/Card';
+import Button from '../../components/Button/Button';
 import styles from './depoimentos.module.css';
 
 /**
@@ -179,7 +180,7 @@ export default function Depoimentos() {
             </div>
 
             <div className={styles.testimonialsGrid}>
-              {testimonials.map((testimonial) => (
+              {testimonials.map((testimonial, index) => (
                 <Card key={testimonial.id} variant="elevated" className={styles.testimonialCard}>
                   <div className={styles.testimonialHeader}>
                     <div className={styles.clientInfo}>

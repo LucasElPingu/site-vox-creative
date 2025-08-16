@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://voxcreative.com.br/sitemap.xml
+Sitemap: https://www.landiva.com.br/sitemap.xml
 
 # Disallow admin areas (if any)
 Disallow: /admin/

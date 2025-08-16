@@ -1,7 +1,8 @@
+import React from 'react';
 import Head from 'next/head';
-import Button from '../../components/Button/Button';
-import Card from '../../components/Card/Card';
 import Layout from '../../components/Layout/Layout';
+import Card from '../../components/Card/Card';
+import Button from '../../components/Button/Button';
 import styles from './time.module.css';
 
 /**
@@ -180,7 +181,7 @@ export default function Time() {
             </div>
 
             <div className={styles.teamGrid}>
-              {teamMembers.map((member) => (
+              {teamMembers.map((member, index) => (
                 <Card key={member.id} variant="elevated" className={styles.memberCard}>
                   <div className={styles.memberHeader}>
                     <div className={styles.memberPhoto}>
