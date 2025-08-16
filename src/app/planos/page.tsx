@@ -1,15 +1,36 @@
-import React from 'react';
 import Head from 'next/head';
-import Layout from '../../components/Layout/Layout';
-import Card from '../../components/Card/Card';
 import Button from '../../components/Button/Button';
+import Card from '../../components/Card/Card';
+import Layout from '../../components/Layout/Layout';
 import styles from './planos.module.css';
 
 /**
  * Página de Planos - Comparação completa de todos os serviços
+ * Correção: tipagem para permitir featureValues[plan.name] sem mudar a lógica.
  */
+
+// TIPAGENS ADICIONADAS (sem mudar a lógica)
+type PlanKey = 'Essencial' | 'Profissional' | 'Premium' | 'Enterprise';
+
+type SocialPlan = {
+  name: PlanKey;
+  price: string;
+  description: string;
+  features: string[];
+  highlight: boolean;
+};
+
+type TrafficPlan = {
+  name: string;
+  price: string;
+  description: string;
+  features: string[];
+  note: string;
+  isCustom: boolean;
+};
+
 export default function Planos() {
-  const socialMediaPlans = [
+  const socialMediaPlans: SocialPlan[] = [
     {
       name: 'Essencial',
       price: 'R$ 897',
@@ -76,7 +97,7 @@ export default function Planos() {
     }
   ];
 
-  const trafficPlans = [
+  const trafficPlans: TrafficPlan[] = [
     {
       name: 'Tráfego Pago Fixo',
       price: 'R$ 1.997',
@@ -111,7 +132,7 @@ export default function Planos() {
     }
   ];
 
-  const comparisonFeatures = [
+  const comparisonFeatures: string[] = [
     'Posts mensais',
     'Stories por semana',
     'Planejamento editorial',
@@ -124,35 +145,36 @@ export default function Planos() {
     'Campanhas'
   ];
 
-  const featureValues = {
-    'Essencial': ['12 posts', '6 stories', '✓', 'Básica', '✗', 'Mensal', 'WhatsApp', '✗', '✗', '✗'],
-    'Profissional': ['20 posts', '10 stories', '✓', 'Ativa', '✓', 'Avançado', 'Prioritário', 'Estratégica', '✗', '✗'],
-    'Premium': ['30 posts', 'Ilimitado', '✓', 'Ativa', '✓', 'Executivo', '24h', 'Semanal', '✓', '✗'],
-    'Enterprise': ['Ilimitado', 'Ilimitado', '✓', 'Dedicada', '✓', 'Personalizado', 'Dedicado', 'Executiva', '✓', '✓']
+  // TIPAGEM DO MAPA DE VALORES (sem mudar conteúdo)
+  const featureValues: Record<PlanKey, string[]> = {
+    Essencial: ['12 posts', '6 stories', '✓', 'Básica', '✗', 'Mensal', 'WhatsApp', '✗', '✗', '✗'],
+    Profissional: ['20 posts', '10 stories', '✓', 'Ativa', '✓', 'Avançado', 'Prioritário', 'Estratégica', '✗', '✗'],
+    Premium: ['30 posts', 'Ilimitado', '✓', 'Ativa', '✓', 'Executivo', '24h', 'Semanal', '✓', '✗'],
+    Enterprise: ['Ilimitado', 'Ilimitado', '✓', 'Dedicada', '✓', 'Personalizado', 'Dedicado', 'Executiva', '✓', '✓']
   };
 
   return (
     <>
       <Head>
         <title>Planos e Preços - Social Media, Design e Tráfego Pago | Vox Creative</title>
-        <meta name="description" content="Compare todos os planos da Vox Creative: Social Media, Design Estratégico e Tráfego Pago. Escolha o ideal para sua marca crescer no digital." />
+        <meta
+          name="description"
+          content="Compare todos os planos da Vox Creative: Social Media, Design Estratégico e Tráfego Pago. Escolha o ideal para sua marca crescer no digital."
+        />
       </Head>
-      
+
       <Layout>
         {/* Hero */}
         <section className={styles.heroSection}>
           <div className={styles.container}>
             <div className={styles.heroContent}>
-              <div className={styles.badge}>
-                🧩 Planos & Preços
-              </div>
+              <div className={styles.badge}>🧩 Planos & Preços</div>
               <h1 className={styles.heroTitle}>
-                Escolha o plano ideal para{' '}
-                <span className={styles.highlight}>sua marca crescer</span>
+                Escolha o plano ideal para <span className={styles.highlight}>sua marca crescer</span>
               </h1>
               <p className={styles.heroDescription}>
-                Compare todos os nossos planos de Social Media, Design e Tráfego Pago. 
-                Encontre a solução perfeita para o momento atual do seu negócio.
+                Compare todos os nossos planos de Social Media, Design e Tráfego Pago. Encontre a solução perfeita
+                para o momento atual do seu negócio.
               </p>
             </div>
           </div>
@@ -163,28 +185,18 @@ export default function Planos() {
           <div className={styles.container}>
             <div className={styles.sectionHeader}>
               <h2 className={styles.sectionTitle}>
-                Planos{' '}
-                <span className={styles.highlight}>Social Media + Design</span>
+                Planos <span className={styles.highlight}>Social Media + Design</span>
               </h2>
               <p className={styles.sectionDescription}>
-                Gestão completa das suas redes sociais com design estratégico incluso. 
-                Contrato mínimo de 6 meses.
+                Gestão completa das suas redes sociais com design estratégico incluso. Contrato mínimo de 6 meses.
               </p>
             </div>
 
             <div className={styles.plansGrid}>
               {socialMediaPlans.map((plan, index) => (
-                <Card 
-                  key={index}
-                  variant="elevated" 
-                  className={`${styles.planCard} ${plan.highlight ? styles.featured : ''}`}
-                >
-                  {plan.highlight && (
-                    <div className={styles.featuredBadge}>
-                      ⭐ Mais Popular
-                    </div>
-                  )}
-                  
+                <Card key={index} variant="elevated" className={`${styles.planCard} ${plan.highlight ? styles.featured : ''}`}>
+                  {plan.highlight && <div className={styles.featuredBadge}>⭐ Mais Popular</div>}
+
                   <div className={styles.planHeader}>
                     <h3 className={styles.planName}>{plan.name}</h3>
                     <div className={styles.planPrice}>
@@ -193,7 +205,7 @@ export default function Planos() {
                     </div>
                     <p className={styles.planDescription}>{plan.description}</p>
                   </div>
-                  
+
                   <div className={styles.planContent}>
                     <ul className={styles.featuresList}>
                       {plan.features.map((feature, featureIndex) => (
@@ -203,13 +215,8 @@ export default function Planos() {
                         </li>
                       ))}
                     </ul>
-                    
-                    <Button 
-                      href="/contato" 
-                      variant={plan.highlight ? "primary" : "secondary"}
-                      size="large"
-                      className={styles.planButton}
-                    >
+
+                    <Button href="/contato" variant={plan.highlight ? 'primary' : 'secondary'} size="large" className={styles.planButton}>
                       Escolher Plano
                     </Button>
                   </div>
@@ -224,12 +231,9 @@ export default function Planos() {
           <div className={styles.container}>
             <div className={styles.sectionHeader}>
               <h2 className={styles.sectionTitle}>
-                Comparação{' '}
-                <span className={styles.highlight}>Detalhada</span>
+                Comparação <span className={styles.highlight}>Detalhada</span>
               </h2>
-              <p className={styles.sectionDescription}>
-                Veja lado a lado todas as funcionalidades de cada plano.
-              </p>
+              <p className={styles.sectionDescription}>Veja lado a lado todas as funcionalidades de cada plano.</p>
             </div>
 
             <div className={styles.comparisonTable}>
@@ -269,8 +273,7 @@ export default function Planos() {
           <div className={styles.container}>
             <div className={styles.sectionHeader}>
               <h2 className={styles.sectionTitle}>
-                Planos de{' '}
-                <span className={styles.highlight}>Tráfego Pago</span>
+                Planos de <span className={styles.highlight}>Tráfego Pago</span>
               </h2>
               <p className={styles.sectionDescription}>
                 Gestão especializada das suas campanhas pagas com foco em ROI e conversões.
@@ -281,9 +284,7 @@ export default function Planos() {
               {trafficPlans.map((plan, index) => (
                 <Card key={index} variant="elevated" className={styles.trafficCard}>
                   <div className={styles.trafficHeader}>
-                    <div className={styles.trafficIcon}>
-                      {plan.isCustom ? '🎯' : '🚀'}
-                    </div>
+                    <div className={styles.trafficIcon}>{plan.isCustom ? '🎯' : '🚀'}</div>
                     <h3 className={styles.trafficName}>{plan.name}</h3>
                     <div className={styles.trafficPrice}>
                       <span className={styles.price}>{plan.price}</span>
@@ -291,7 +292,7 @@ export default function Planos() {
                     </div>
                     <p className={styles.trafficDescription}>{plan.description}</p>
                   </div>
-                  
+
                   <div className={styles.trafficContent}>
                     <ul className={styles.featuresList}>
                       {plan.features.map((feature, featureIndex) => (
@@ -301,18 +302,18 @@ export default function Planos() {
                         </li>
                       ))}
                     </ul>
-                    
+
                     <div className={styles.trafficNote}>
                       <p>💡 {plan.note}</p>
                     </div>
-                    
-                    <Button 
-                      href={plan.isCustom ? "https://wa.me/5511999999999" : "/contato"}
-                      variant={plan.isCustom ? "whatsapp" : "primary"}
+
+                    <Button
+                      href={plan.isCustom ? 'https://wa.me/5511999999999' : '/contato'}
+                      variant={plan.isCustom ? 'whatsapp' : 'primary'}
                       size="large"
-                      target={plan.isCustom ? "_blank" : undefined}
+                      target={plan.isCustom ? '_blank' : undefined}
                     >
-                      {plan.isCustom ? "💬 Falar no WhatsApp" : "Contratar Plano"}
+                      {plan.isCustom ? '💬 Falar no WhatsApp' : 'Contratar Plano'}
                     </Button>
                   </div>
                 </Card>
@@ -326,8 +327,7 @@ export default function Planos() {
           <div className={styles.container}>
             <div className={styles.sectionHeader}>
               <h2 className={styles.sectionTitle}>
-                Dúvidas{' '}
-                <span className={styles.highlight}>Frequentes</span>
+                Dúvidas <span className={styles.highlight}>Frequentes</span>
               </h2>
             </div>
 
@@ -335,24 +335,24 @@ export default function Planos() {
               <Card variant="bordered" className={styles.faqCard}>
                 <h4 className={styles.faqQuestion}>Posso trocar de plano?</h4>
                 <p className={styles.faqAnswer}>
-                  Sim! Você pode fazer upgrade a qualquer momento. Para downgrade, 
-                  é necessário aguardar o fim do ciclo atual.
+                  Sim! Você pode fazer upgrade a qualquer momento. Para downgrade, é necessário aguardar o fim do ciclo
+                  atual.
                 </p>
               </Card>
-              
+
               <Card variant="bordered" className={styles.faqCard}>
                 <h4 className={styles.faqQuestion}>Qual o contrato mínimo?</h4>
                 <p className={styles.faqAnswer}>
-                  6 meses para Social Media e 3 meses para Tráfego Pago. 
-                  Oferecemos 10% de desconto para contratos anuais.
+                  6 meses para Social Media e 3 meses para Tráfego Pago. Oferecemos 10% de desconto para contratos
+                  anuais.
                 </p>
               </Card>
-              
+
               <Card variant="bordered" className={styles.faqCard}>
                 <h4 className={styles.faqQuestion}>Posso pausar o serviço?</h4>
                 <p className={styles.faqAnswer}>
-                  Oferecemos pausa de até 30 dias por ano útil, ideal para 
-                  férias ou períodos específicos do seu negócio.
+                  Oferecemos pausa de até 30 dias por ano útil, ideal para férias ou períodos específicos do seu
+                  negócio.
                 </p>
               </Card>
             </div>
@@ -369,23 +369,16 @@ export default function Planos() {
         <section className={styles.ctaSection}>
           <div className={styles.container}>
             <div className={styles.ctaContent}>
-              <h2 className={styles.ctaTitle}>
-                Ainda com dúvidas sobre qual plano escolher?
-              </h2>
+              <h2 className={styles.ctaTitle}>Ainda com dúvidas sobre qual plano escolher?</h2>
               <p className={styles.ctaDescription}>
-                Nossa equipe está pronta para ajudar você a encontrar a solução 
-                perfeita para suas necessidades e orçamento.
+                Nossa equipe está pronta para ajudar você a encontrar a solução perfeita para suas necessidades e
+                orçamento.
               </p>
               <div className={styles.ctaButtons}>
                 <Button href="/contato" variant="primary" size="large">
                   💬 Falar com Especialista
                 </Button>
-                <Button 
-                  href="https://wa.me/5511999999999" 
-                  variant="whatsapp" 
-                  size="large"
-                  target="_blank"
-                >
+                <Button href="https://wa.me/5511999999999" variant="whatsapp" size="large" target="_blank">
                   📱 WhatsApp Direto
                 </Button>
               </div>

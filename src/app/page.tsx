@@ -180,7 +180,7 @@ export default function Time() {
             </div>
 
             <div className={styles.teamGrid}>
-              {teamMembers.map((member, index) => (
+              {teamMembers.map((member) => (
                 <Card key={member.id} variant="elevated" className={styles.memberCard}>
                   <div className={styles.memberHeader}>
                     <div className={styles.memberPhoto}>

@@ -1,9 +1,9 @@
 'use client';
 
 import React, { useState } from 'react';
-import Layout from '../../components/Layout/Layout';
-import Card from '../../components/Card/Card';
 import Button from '../../components/Button/Button';
+import Card from '../../components/Card/Card';
+import Layout from '../../components/Layout/Layout';
 import styles from './contato.module.css';
 
 /**
