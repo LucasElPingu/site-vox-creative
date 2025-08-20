@@ -6,7 +6,7 @@ import ServicesSection from '../components/ServicesSection/ServicesSection';
 import CasesPreview from '../components/CasesPreview/CasesPreview';
 
 /**
- * Página inicial do site Vox Creative
+ * Página inicial do site VOX CREATIVE
  * Combina todas as seções principais: Hero, Sobre, Serviços, Cases
  */
 export default function Home() {

@@ -6,7 +6,7 @@ import styles from './servicos.module.css';
 
 export const metadata = {
   title: "Nossos Serviços",
-  description: "Conheça os serviços da VOX CREATIVE: marketing digital, design gráfico e estratégias para jovens empreendedores.",
+  description: "Conheça os serviços da VOX CREATIVE: marketing digital, design gráfico e estratégias para empresas e empreendedores.",
 };
 
 export default function ServicosPage() {
@@ -27,8 +27,8 @@ export default function ServicosPage() {
     },
     {
       icon: "💼",
-      title: "Consultoria para Empreendedores",
-      description: "Orientação especializada para jovens empreendedores que querem construir uma marca de sucesso.",
+      title: "Consultoria Empresarial",
+      description: "Orientação especializada para empresas e empreendedores que querem construir uma marca de sucesso.",
       features: ["Posicionamento de marca", "Estratégia de negócio", "Mentoria personalizada", "Plano de crescimento"],
       link: "/contato"
     }
@@ -43,8 +43,8 @@ export default function ServicosPage() {
               Serviços que <span className={styles.highlight}>transformam</span> sua marca
             </h1>
             <p className={styles.description}>
-              Oferecemos soluções completas em marketing digital e design, 
-              especialmente desenvolvidas para jovens empreendedores que buscam resultados reais.
+              Oferecemos soluções completas em marketing digital e design,
+              desenvolvidas para empresas e empreendedores que buscam resultados reais.
             </p>
           </div>
         </div>

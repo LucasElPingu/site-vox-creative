@@ -9,9 +9,9 @@ import styles from './AboutVoxSection.module.css';
 export default function AboutVoxSection() {
   const stats = [
     {
-      number: '3+',
+      number: '4+',
       label: 'Anos de Mercado',
-      description: 'Consolidando nossa presença'
+      description: 'Desde 2020 no mercado'
     },
     {
       number: '4',
@@ -60,9 +60,10 @@ export default function AboutVoxSection() {
             A origem do nosso <span className={styles.highlight}>propósito</span>
           </h2>
           <p className={styles.description}>
-            Há mais de 3 anos no mercado, a VOX CREATIVE nasceu com uma missão clara: 
-            dar voz às marcas que querem se destacar no mundo digital. Nosso nome vem 
-            do latim &ldquo;vox&rdquo;, que significa voz - e é exatamente isso que fazemos: 
+            A VOX CREATIVE começou em 2020, em Guanambi – Bahia, e ao longo do tempo
+            expandiu sua atuação para Goiânia, Embu e Recife. Nascemos com uma missão clara:
+            dar voz às marcas que querem se destacar no mundo digital. Nosso nome vem
+            do latim &ldquo;vox&rdquo;, que significa voz - e é exatamente isso que fazemos:
             amplificamos a voz única de cada marca.
           </p>
         </div>

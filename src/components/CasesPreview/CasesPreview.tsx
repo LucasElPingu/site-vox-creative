@@ -135,11 +135,11 @@ export default function CasesPreview() {
               Vamos conversar sobre como podemos ajudar sua marca a alcançar resultados incríveis.
             </p>
             <div className={styles.ctaButtons}>
-              <Button href="/cases" variant="secondary" size="large">
-                📱 Ver Todos os Cases
-              </Button>
               <Button href="/contato" variant="primary" size="large">
                 🚀 Quero Meu Case!
+              </Button>
+              <Button href="/servicos" variant="secondary" size="large">
+                🎯 Nossos Serviços
               </Button>
             </div>
           </div>

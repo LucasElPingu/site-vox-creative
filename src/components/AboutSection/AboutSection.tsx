@@ -11,8 +11,8 @@ export default function AboutSection() {
   const highlights = [
     {
       icon: '🎆',
-      title: 'Jovens Empreendedores',
-      description: 'Especializada no público jovem'
+      title: 'Público em Geral',
+      description: 'Atendemos clientes diversos'
     },
     {
       icon: '🎨',
@@ -43,19 +43,18 @@ export default function AboutSection() {
             
             <h2 className={styles.title}>
               Especializada em{' '}
-              <span className={styles.highlight}>jovens empreendedores</span>{' '}
+              <span className={styles.highlight}>soluções digitais</span>{' '}
               com visão de futuro
             </h2>
             
             <p className={styles.description}>
-              A <strong>VOX CREATIVE</strong> é liderada por <strong>Eduarda Magalhães</strong>,
-              uma agência focada em transformar jovens empreendedores em marcas de sucesso.
-              Nosso diferencial está no design minimalista e moderno, aliado a estratégias
-              eficazes que geram resultados reais.
+              A <strong>VOX CREATIVE</strong> é uma agência focada em transformar empresas
+              e empreendedores em marcas de sucesso. Nosso diferencial está no design
+              minimalista e moderno, aliado a estratégias eficazes que geram resultados reais.
             </p>
 
             <p className={styles.description}>
-              Acreditamos que cada jovem empreendedor merece uma <strong>identidade visual marcante</strong>
+              Acreditamos que toda empresa merece uma <strong>identidade visual marcante</strong>
               e uma <strong>presença digital de impacto</strong>. Trabalhamos com dedicação para
               transformar suas ideias em marcas que se destacam no mercado.
             </p>

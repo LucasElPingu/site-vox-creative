@@ -78,283 +78,283 @@ export default function Contato() {
 
   return (
     <Layout>
-        {/* Hero */}
-        <section className={styles.heroSection}>
-          <div className={styles.container}>
-            <div className={styles.heroContent}>
-              <div className={styles.badge}>
-                💬 Fale Conosco
-              </div>
-              <h1 className={styles.heroTitle}>
-                Vamos conversar sobre{' '}
-                <span className={styles.highlight}>seu projeto</span>?
-              </h1>
-              <p className={styles.heroDescription}>
-                Especializada em jovens empreendedores, estamos prontos para
-                transformar sua idéia em uma marca de sucesso. Vamos conversar!
-              </p>
+      {/* Hero */}
+      <section className={styles.heroSection}>
+        <div className={styles.container}>
+          <div className={styles.heroContent}>
+            <div className={styles.badge}>
+              💬 Fale Conosco
             </div>
+            <h1 className={styles.heroTitle}>
+              Vamos conversar sobre{' '}
+              <span className={styles.highlight}>seu projeto</span>?
+            </h1>
+            <p className={styles.heroDescription}>
+              Atendemos ao público em geral, estamos prontos para 
+              transformar sua idéia em uma marca de sucesso. Vamos conversar!
+            </p>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* Formulário e Informações */}
-        <section className={styles.contactSection}>
-          <div className={styles.container}>
-            <div className={styles.contactGrid}>
-              {/* Formulário */}
-              <div className={styles.formContainer}>
-                <Card variant="elevated" className={styles.formCard}>
-                  <div className={styles.formHeader}>
-                    <h2 className={styles.formTitle}>Envie sua mensagem</h2>
-                    <p className={styles.formDescription}>
-                      Preencha o formulário e nossa equipe entrará em contato em até 24 horas.
-                    </p>
+      {/* Formulário e Informações */}
+      <section className={styles.contactSection}>
+        <div className={styles.container}>
+          <div className={styles.contactGrid}>
+            {/* Formulário */}
+            <div className={styles.formContainer}>
+              <Card variant="elevated" className={styles.formCard}>
+                <div className={styles.formHeader}>
+                  <h2 className={styles.formTitle}>Envie sua mensagem</h2>
+                  <p className={styles.formDescription}>
+                    Preencha o formulário e nossa equipe entrará em contato em até 24 horas.
+                  </p>
+                </div>
+
+                <form onSubmit={handleSubmit} className={styles.form}>
+                  <div className={styles.formGroup}>
+                    <label htmlFor="name" className={styles.label}>
+                      Nome completo *
+                    </label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleInputChange}
+                      required
+                      className={styles.input}
+                      placeholder="Seu nome completo"
+                    />
                   </div>
 
-                  <form onSubmit={handleSubmit} className={styles.form}>
-                    <div className={styles.formGroup}>
-                      <label htmlFor="name" className={styles.label}>
-                        Nome completo *
-                      </label>
-                      <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleInputChange}
-                        required
-                        className={styles.input}
-                        placeholder="Seu nome completo"
-                      />
-                    </div>
+                  <div className={styles.formGroup}>
+                    <label htmlFor="email" className={styles.label}>
+                      E-mail *
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleInputChange}
+                      required
+                      className={styles.input}
+                      placeholder="seu@email.com"
+                    />
+                  </div>
 
-                    <div className={styles.formGroup}>
-                      <label htmlFor="email" className={styles.label}>
-                        E-mail *
-                      </label>
-                      <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        value={formData.email}
-                        onChange={handleInputChange}
-                        required
-                        className={styles.input}
-                        placeholder="seu@email.com"
-                      />
-                    </div>
+                  <div className={styles.formGroup}>
+                    <label htmlFor="instagram" className={styles.label}>
+                      Instagram ou Nome da Empresa
+                    </label>
+                    <input
+                      type="text"
+                      id="instagram"
+                      name="instagram"
+                      value={formData.instagram}
+                      onChange={handleInputChange}
+                      className={styles.input}
+                      placeholder="@seuinstagram ou Nome da Empresa"
+                    />
+                  </div>
 
-                    <div className={styles.formGroup}>
-                      <label htmlFor="instagram" className={styles.label}>
-                        Instagram ou Nome da Empresa
-                      </label>
-                      <input
-                        type="text"
-                        id="instagram"
-                        name="instagram"
-                        value={formData.instagram}
-                        onChange={handleInputChange}
-                        className={styles.input}
-                        placeholder="@seuinstagram ou Nome da Empresa"
-                      />
-                    </div>
-
-                    <div className={styles.formGroup}>
-                      <label htmlFor="interest" className={styles.label}>
-                        Interesse *
-                      </label>
-                      <select
-                        id="interest"
-                        name="interest"
-                        value={formData.interest}
-                        onChange={handleInputChange}
-                        required
-                        className={styles.select}
-                      >
-                        <option value="">Selecione seu interesse</option>
-                        {interests.map((interest, index) => (
-                          <option key={index} value={interest}>
-                            {interest}
-                          </option>
-                        ))}
-                      </select>
-                    </div>
-
-                    <div className={styles.formGroup}>
-                      <label htmlFor="message" className={styles.label}>
-                        Mensagem *
-                      </label>
-                      <textarea
-                        id="message"
-                        name="message"
-                        value={formData.message}
-                        onChange={handleInputChange}
-                        required
-                        rows={5}
-                        className={styles.textarea}
-                        placeholder="Conte-nos mais sobre seu projeto, objetivos e como podemos ajudar..."
-                      />
-                    </div>
-
-                    {submitStatus === 'success' && (
-                      <div className={styles.successMessage}>
-                        ✅ Mensagem enviada com sucesso! Nossa equipe entrará em contato em breve.
-                      </div>
-                    )}
-
-                    {submitStatus === 'error' && (
-                      <div className={styles.errorMessage}>
-                        ❌ Erro ao enviar mensagem. Tente novamente ou entre em contato via WhatsApp.
-                      </div>
-                    )}
-
-                    <Button
-                      type="submit"
-                      variant="primary"
-                      size="large"
-                      disabled={isSubmitting}
-                      className={styles.submitButton}
+                  <div className={styles.formGroup}>
+                    <label htmlFor="interest" className={styles.label}>
+                      Interesse *
+                    </label>
+                    <select
+                      id="interest"
+                      name="interest"
+                      value={formData.interest}
+                      onChange={handleInputChange}
+                      required
+                      className={styles.select}
                     >
-                      {isSubmitting ? '📤 Enviando...' : '📨 Enviar Mensagem'}
-                    </Button>
-                  </form>
-                </Card>
-              </div>
+                      <option value="">Selecione seu interesse</option>
+                      {interests.map((interest, index) => (
+                        <option key={index} value={interest}>
+                          {interest}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
 
-              {/* Informações de Contato */}
-              <div className={styles.infoContainer}>
-                <Card variant="bordered" className={styles.infoCard}>
-                  <h3 className={styles.infoTitle}>Informações de Contato</h3>
+                  <div className={styles.formGroup}>
+                    <label htmlFor="message" className={styles.label}>
+                      Mensagem *
+                    </label>
+                    <textarea
+                      id="message"
+                      name="message"
+                      value={formData.message}
+                      onChange={handleInputChange}
+                      required
+                      rows={5}
+                      className={styles.textarea}
+                      placeholder="Conte-nos mais sobre seu projeto, objetivos e como podemos ajudar..."
+                    />
+                  </div>
+
+                  {submitStatus === 'success' && (
+                    <div className={styles.successMessage}>
+                      ✅ Mensagem enviada com sucesso! Nossa equipe entrará em contato em breve.
+                    </div>
+                  )}
+
+                  {submitStatus === 'error' && (
+                    <div className={styles.errorMessage}>
+                      ❌ Erro ao enviar mensagem. Tente novamente ou entre em contato via WhatsApp.
+                    </div>
+                  )}
+
+                  <Button
+                    type="submit"
+                    variant="primary"
+                    size="large"
+                    disabled={isSubmitting}
+                    className={styles.submitButton}
+                  >
+                    {isSubmitting ? '📤 Enviando...' : '📨 Enviar Mensagem'}
+                  </Button>
+                </form>
+              </Card>
+            </div>
+
+            {/* Informações de Contato */}
+            <div className={styles.infoContainer}>
+              <Card variant="bordered" className={styles.infoCard}>
+                <h3 className={styles.infoTitle}>Informações de Contato</h3>
+                
+                <div className={styles.contactInfo}>
+                  <div className={styles.contactItem}>
+                    <div className={styles.contactIcon}>📧</div>
+                    <div>
+                      <strong>E-mail</strong>
+                      <p>thatiane.voxcreative@gmail.com</p>
+                      <p>vox.creativeagencia@gmail.com</p>
+                    </div>
+                  </div>
                   
-                  <div className={styles.contactInfo}>
-                    <div className={styles.contactItem}>
-                      <div className={styles.contactIcon}>📧</div>
-                      <div>
-                        <strong>E-mail</strong>
-                        <p>thatiane.voxcreative@gmail.com</p>
-                        <p>vox.creativeagencia@gmail.com</p>
-                      </div>
-                    </div>
-                    
-                    <div className={styles.contactItem}>
-                      <div className={styles.contactIcon}>📱</div>
-                      <div>
-                        <strong>WhatsApp</strong>
-                        <p>(11) 95206-3578</p>
-                      </div>
-                    </div>
-                    
-                    <div className={styles.contactItem}>
-                      <div className={styles.contactIcon}>🌍</div>
-                      <div>
-                        <strong>Especialidade</strong>
-                        <p>Jovens Empreendedores</p>
-                      </div>
-                    </div>
-                    
-                    <div className={styles.contactItem}>
-                      <div className={styles.contactIcon}>⏰</div>
-                      <div>
-                        <strong>Horário</strong>
-                        <p>Seg à Sex: 8h às 18h</p>
-                      </div>
+                  <div className={styles.contactItem}>
+                    <div className={styles.contactIcon}>📱</div>
+                    <div>
+                      <strong>WhatsApp</strong>
+                      <p>(11) 95206-3578</p>
                     </div>
                   </div>
+                  
+                  <div className={styles.contactItem}>
+                    <div className={styles.contactIcon}>🌍</div>
+                    <div>
+                      <strong>Atendimento</strong>
+                      <p>Todo o Brasil</p>
+                    </div>
+                  </div>
+                  
+                  <div className={styles.contactItem}>
+                    <div className={styles.contactIcon}>⏰</div>
+                    <div>
+                      <strong>Horário</strong>
+                      <p>Seg à Sex: 8h às 18h</p>
+                    </div>
+                  </div>
+                </div>
 
-                  <div className={styles.quickContact}>
-                    <h4>Contato Rápido</h4>
-                    <Button
-                      href="https://wa.me/5511952063578"
-                      variant="whatsapp"
-                      size="large"
-                      target="_blank"
-                      className={styles.whatsappButton}
-                    >
-                      💬 Falar no WhatsApp
-                    </Button>
-                  </div>
-                </Card>
+                <div className={styles.quickContact}>
+                  <h4>Contato Rápido</h4>
+                  <Button 
+                    href="https://wa.me/5511952063578" 
+                    variant="whatsapp"
+                    size="large"
+                    target="_blank"
+                    className={styles.whatsappButton}
+                  >
+                    💬 Falar no WhatsApp
+                  </Button>
+                </div>
+              </Card>
 
-                <Card variant="bordered" className={styles.socialCard}>
-                  <h4 className={styles.socialTitle}>Nossas Redes Sociais</h4>
-                  <div className={styles.socialLinks}>
-                    <a href="https://instagram.com/voxcreative" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
-                      📷 Instagram
-                    </a>
-                    <a href="https://facebook.com/voxcreative" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
-                      👥 Facebook
-                    </a>
-                    <a href="https://linkedin.com/company/voxcreative" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
-                      💼 LinkedIn
-                    </a>
-                    <a href="https://youtube.com/voxcreative" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
-                      🎥 YouTube
-                    </a>
-                  </div>
-                </Card>
-              </div>
+              <Card variant="bordered" className={styles.socialCard}>
+                <h4 className={styles.socialTitle}>Nossas Redes Sociais</h4>
+                <div className={styles.socialLinks}>
+                  <a href="https://instagram.com/voxcreative" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
+                    📷 Instagram
+                  </a>
+                  <a href="https://facebook.com/voxcreative" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
+                    👥 Facebook
+                  </a>
+                  <a href="https://linkedin.com/company/voxcreative" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
+                    💼 LinkedIn
+                  </a>
+                  <a href="https://youtube.com/voxcreative" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
+                    🎥 YouTube
+                  </a>
+                </div>
+              </Card>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* Equipe */}
-        <section className={styles.teamSection}>
-          <div className={styles.container}>
-            <div className={styles.sectionHeader}>
-              <h2 className={styles.sectionTitle}>
-                Fale diretamente com nossa{' '}
-                <span className={styles.highlight}>CEO</span>
-              </h2>
-              <p className={styles.sectionDescription}>
-                Atendimento personalizado e direto com Eduarda Magalhães,
-                CEO da VOX CREATIVE, especializada em jovens empreendedores.
-              </p>
-            </div>
+      {/* Equipe */}
+      <section className={styles.teamSection}>
+        <div className={styles.container}>
+          <div className={styles.sectionHeader}>
+            <h2 className={styles.sectionTitle}>
+              Fale diretamente com nossa{' '}
+              <span className={styles.highlight}>CEO</span>
+            </h2>
+            <p className={styles.sectionDescription}>
+              Atendimento personalizado e direto com nossa CEO, 
+              especializada em soluções digitais personalizadas.
+            </p>
+          </div>
 
-            <div className={styles.teamGrid}>
-              {teamContacts.map((member, index) => (
-                <Card key={index} variant="elevated" className={styles.teamCard}>
-                  <div className={styles.memberImage}>{member.image}</div>
-                  <div className={styles.memberInfo}>
-                    <h4 className={styles.memberName}>{member.name}</h4>
-                    <p className={styles.memberPosition}>{member.position}</p>
-                    <p className={styles.memberCity}>{member.city}</p>
-                    <p className={styles.memberSpecialty}>{member.specialty}</p>
-                    <Button 
-                      href={`https://wa.me/${member.whatsapp}`}
-                      variant="whatsapp" 
-                      size="medium"
-                      target="_blank"
-                    >
-                      💬 WhatsApp
-                    </Button>
-                  </div>
-                </Card>
-              ))}
+          <div className={styles.teamGrid}>
+            {teamContacts.map((member, index) => (
+              <Card key={index} variant="elevated" className={styles.teamCard}>
+                <div className={styles.memberImage}>{member.image}</div>
+                <div className={styles.memberInfo}>
+                  <h4 className={styles.memberName}>{member.name}</h4>
+                  <p className={styles.memberPosition}>{member.position}</p>
+                  <p className={styles.memberCity}>{member.city}</p>
+                  <p className={styles.memberSpecialty}>{member.specialty}</p>
+                  <Button 
+                    href={`https://wa.me/${member.whatsapp}`}
+                    variant="whatsapp" 
+                    size="medium"
+                    target="_blank"
+                  >
+                    💬 WhatsApp
+                  </Button>
+                </div>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Cidades */}
+      <section className={styles.citiesSection}>
+        <div className={styles.container}>
+          <div className={styles.citiesContent}>
+            <h3 className={styles.citiesTitle}>
+              Soluções Digitais Completas
+            </h3>
+            <p className={styles.citiesDescription}>
+              Focamos no desenvolvimento de marcas para empresas e empreendedores 
+              que buscam identidade visual marcante e presença digital de impacto.
+            </p>
+            <div className={styles.citiesList}>
+              <div className={styles.city}>🎨 Design Minimalista</div>
+              <div className={styles.city}>📊 Estratégias Eficazes</div>
+              <div className={styles.city}>🎯 Resultados Reais</div>
+              <div className={styles.city}>🚀 Atendimento Rápido</div>
             </div>
           </div>
-        </section>
-
-        {/* Cidades */}
-        <section className={styles.citiesSection}>
-          <div className={styles.container}>
-            <div className={styles.citiesContent}>
-              <h3 className={styles.citiesTitle}>
-                Especializada em Jovens Empreendedores
-              </h3>
-              <p className={styles.citiesDescription}>
-                Focamos no desenvolvimento de marcas para jovens empreendedores
-                que buscam identidade visual marcante e presença digital de impacto.
-              </p>
-              <div className={styles.citiesList}>
-                <div className={styles.city}>🎨 Design Minimalista</div>
-                <div className={styles.city}>📊 Estratégias Eficazes</div>
-                <div className={styles.city}>🎯 Resultados Reais</div>
-                <div className={styles.city}>🚀 Atendimento Rápido</div>
-              </div>
-            </div>
-          </div>
-        </section>
+        </div>
+      </section>
     </Layout>
   );
 }

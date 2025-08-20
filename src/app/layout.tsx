@@ -12,11 +12,11 @@ export const metadata: Metadata = {
     default: "VOX CREATIVE - Agência de Marketing Digital e Design",
     template: "%s | VOX CREATIVE"
   },
-  description: "VOX CREATIVE - Agência de marketing digital especializada em jovens empreendedores. Equipe global com Larissa Soares, Laís Reis e mais. Design minimalista e estratégias eficazes.",
+  description: "VOX CREATIVE - Agência de marketing digital especializada em soluções digitais. Equipe global com Larissa Soares, Laís Reis e mais. Design minimalista e estratégias eficazes.",
   keywords: [
     "vox creative",
     "agência de marketing digital",
-    "jovens empreendedores",
+    "soluções digitais",
     "design minimalista",
     "marketing digital",
     "identidade visual",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     url: "https://www.landiva.com.br/",
     siteName: "VOX CREATIVE",
     title: "VOX CREATIVE - Agência de Marketing Digital e Design",
-    description: "Agência de marketing digital especializada em jovens empreendedores. Equipe global com visão estratégica e design minimalista.",
+    description: "Agência de marketing digital especializada em soluções digitais. Equipe global com visão estratégica e design minimalista.",
     images: [
       {
         url: "/og-image-vox.jpg",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "VOX CREATIVE - Agência de Marketing Digital e Design",
-    description: "Design minimalista e estratégias eficazes para jovens empreendedores.",
+    description: "Design minimalista e estratégias eficazes para empresas e empreendedores.",
     images: ["/og-image-vox.jpg"],
   },
   robots: {

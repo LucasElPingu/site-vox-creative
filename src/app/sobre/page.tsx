@@ -7,7 +7,7 @@ import styles from './sobre.module.css';
 
 export const metadata = {
   title: "Sobre Nós - Nossa História e Valores",
-  description: "Conheça a VOX CREATIVE e nossa equipe. Agência especializada em jovens empreendedores com design minimalista e estratégias eficazes.",
+  description: "Conheça a VOX CREATIVE e nossa equipe. Agência especializada em soluções digitais com design minimalista e estratégias eficazes.",
 };
 
 /**

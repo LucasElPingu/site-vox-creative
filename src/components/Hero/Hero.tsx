@@ -19,14 +19,14 @@ export default function Hero() {
             
             <h1 className={styles.title}>
               Transformamos{' '}
-              <span className={styles.highlight}>jovens empreendedores</span>{' '}
+              <span className={styles.highlight}>empresas e empreendedores</span>{' '}
               em{' '}
               <span className={styles.highlight}>marcas de sucesso</span>.
             </h1>
             
             <p className={styles.description}>
               Design minimalista, estratégias eficazes e resultados reais.
-              Especializada em jovens empreendedores e empresas que buscam
+              Atendemos empresas e empreendedores que buscam
               identidade visual marcante e presença digital de impacto.
             </p>
             
