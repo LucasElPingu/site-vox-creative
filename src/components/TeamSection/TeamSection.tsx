@@ -1,7 +1,6 @@
-import React from 'react';
 import Image from 'next/image';
-import Card from '../Card/Card';
 import Button from '../Button/Button';
+import Card from '../Card/Card';
 import styles from './TeamSection.module.css';
 
 /**
@@ -13,7 +12,7 @@ export default function TeamSection() {
     {
       name: 'Larissa Soares',
       position: 'Head Comercial',
-      image: null, // Para adicionar foto: substitua por '/images/larissa-soares.jpg'
+      image: '/images/larissa-soares.jpg',
       placeholderEmoji: '👩‍💼',
       specialties: ['Visão Global', 'Marketing Digital', 'Inglês & Espanhol', 'Web3 & IA'],
       bio: `Viajar o mundo foi uma decisão estratégica. Queria entender como o mercado lá fora se movimenta, aprender na prática e trazer esse conhecimento para a Vox. E é justamente aí que eu entro: meu diferencial é unir visão global com execução local.
@@ -31,7 +30,7 @@ Se sua empresa quer se destacar de verdade, crescer e estar à frente de todos n
     {
       name: 'Laís Reis',
       position: 'Design Strategist',
-      image: null, // Para adicionar foto: substitua por '/images/lais-reis.jpg'
+      image: '/images/lais-reis.jpg',
       placeholderEmoji: '👩‍🎨',
       specialties: ['Design Estratégico', 'Identidade Visual', 'Branding', 'Comunicação'],
       bio: `Atuo na área visual com foco em transformar ideias em criações que comunicam com clareza e personalidade. Ao longo da minha trajetória, venho desenvolvendo um olhar cada vez mais estratégico, unindo sensibilidade estética, intenção e propósito em cada projeto.
@@ -76,8 +75,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor i
     },
     {
       name: 'Lucas Silva',
-      position: 'Desenvolvedor Web',
-      image: '/images/lucas.jpg',
+      position: 'Parceiro (Desenvolvedor Web)',
+      image: '/images/lucas.png',
       placeholderEmoji: '👨‍💻',
       specialties: ['Next.js', 'TypeScript', 'Spring Boot', 'SEO', 'Performance'],
       bio: `Desenvolvedor web especializado em criação de sites profissionais com foco em performance, design moderno e otimização para SEO. Trabalho com tecnologias como Next.js, TypeScript e Spring Boot, entregando soluções personalizadas para empreendedores e empresas que desejam fortalecer sua presença digital e conquistar mais clientes online.`,
