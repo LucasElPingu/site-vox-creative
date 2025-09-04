@@ -35,25 +35,10 @@ export default function Footer() {
   ];
 
   const socialLinks = [
-    { 
-      href: 'https://instagram.com/voxcreative', 
+    {
+      href: 'https://www.instagram.com/vox_creativ',
       label: 'Instagram',
       icon: '📷'
-    },
-    { 
-      href: 'https://facebook.com/voxcreative', 
-      label: 'Facebook',
-      icon: '👥'
-    },
-    { 
-      href: 'https://linkedin.com/company/voxcreative', 
-      label: 'LinkedIn',
-      icon: '💼'
-    },
-    { 
-      href: 'https://youtube.com/voxcreative', 
-      label: 'YouTube',
-      icon: '🎥'
     }
   ];
 
@@ -129,7 +114,7 @@ export default function Footer() {
               <h4 className={styles.columnTitle}>Atendimento Nacional</h4>
               <p className={styles.contactInfo}>
                 📧 contato@voxcreative.com.br<br />
-                📱 (11) 9 9999-9999
+                📱 (11) 94954-8700
               </p>
               <div className={styles.cities}>
                 <h5>Nossas Cidades:</h5>
@@ -139,9 +124,9 @@ export default function Footer() {
                   ))}
                 </ul>
               </div>
-              <Button 
-                href="https://wa.me/5511999999999" 
-                variant="whatsapp" 
+              <Button
+                href="https://wa.me/5511949548700"
+                variant="whatsapp"
                 size="medium"
                 target="_blank"
               >

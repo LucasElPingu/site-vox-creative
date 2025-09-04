@@ -11,42 +11,52 @@ export default function CasesPreview() {
   const cases = [
     {
       id: 1,
-      title: 'Advocacia Criminal',
-      category: 'Advocacia',
-      description: 'Aumento de 300% no alcance e 150% em conversões para escritório especializado em direito criminal.',
+      title: 'Dra. Hellen Magalhães',
+      category: 'Advogada de Família',
+      description: 'Especialista em guarda internacional e defesa de mães. +2.500 mães defendidas e foco em proteção familiar.',
       beforeAfter: {
-        before: 'Sem presença digital',
-        after: '50k+ seguidores'
+        before: 'Baixa visibilidade digital',
+        after: 'Posicionamento de autoridade'
       },
-      results: ['300% alcance', '150% conversões', '50k seguidores'],
+      results: ['+2.500 mães atendidas', 'Posicionamento de autoridade', 'Agendamento simplificado via Instagram'],
       image: '⚖️',
-      bgColor: '#1F2937'
+      bgColor: '#1F2937',
+      links: {
+        instagram: 'https://www.instagram.com/advhellenmagalhaes/'
+      }
     },
     {
       id: 2,
-      title: 'Clínica Estética',
-      category: 'Saúde & Beleza',
-      description: 'Estratégia completa que resultou em agenda lotada e reconhecimento regional da marca.',
+      title: 'Sara Gomes',
+      category: 'Psicóloga',
+      description: 'Atuação focada em Recomeços, Relações e Amor-próprio. Conteúdo e posicionamento para atrair pacientes e fortalecer autoridade.',
       beforeAfter: {
-        before: 'Poucos clientes',
-        after: 'Agenda lotada'
+        before: 'Alcance limitado',
+        after: 'Engajamento qualificado'
       },
-      results: ['500% leads', 'Agenda lotada', '25k seguidores'],
-      image: '💄',
-      bgColor: '#EC4899'
+      results: ['Melhor engajamento', 'Agenda mais qualificada', 'Crescimento de seguidores relevantes'],
+      image: '🧠',
+      bgColor: '#06B6D4',
+      links: {
+        instagram: 'https://www.instagram.com/psi.saragomes/',
+        website: 'https://psisaragomes.com.br/'
+      }
     },
     {
       id: 3,
-      title: 'Agronegócio',
-      category: 'Agro',
-      description: 'Posicionamento digital para empresa do agro, gerando leads qualificados e parcerias estratégicas.',
+      title: 'DiasFit Saudável',
+      category: 'Alimentação Saudável',
+      description: 'Marmitas saudáveis, caldos e sucos funcionais. Comunicação focada em naturalidade e vida saudável, sem conservantes.',
       beforeAfter: {
-        before: 'Marketing tradicional',
-        after: 'Líder digital'
+        before: 'Baixa conversão de pedidos',
+        after: 'Pedidos recorrentes e marca reconhecida'
       },
-      results: ['200% leads B2B', 'Parcerias estratégicas', '15k seguidores'],
-      image: '🌾',
-      bgColor: '#059669'
+      results: ['Aumento de pedidos', 'Melhor comunicação do cardápio', 'Crescimento de seguidores locais'],
+      image: '🥗',
+      bgColor: '#10B981',
+      links: {
+        instagram: 'https://www.instagram.com/diasfit.saudavel/'
+      }
     }
   ];
 

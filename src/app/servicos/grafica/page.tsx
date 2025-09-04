@@ -280,7 +280,7 @@ export default function ServicosGrafica() {
                 </div>
                 <div className={styles.customQuoteActions}>
                   <Button 
-                    href="https://wa.me/5511999999999" 
+                    href="https://wa.me/5511949548700" 
                     variant="whatsapp"
                     size="large"
                     target="_blank"
@@ -370,7 +370,7 @@ export default function ServicosGrafica() {
               </p>
               <div className={styles.ctaButtons}>
                 <Button 
-                  href="https://wa.me/5511999999999" 
+                  href="https://wa.me/5511949548700" 
                   variant="whatsapp" 
                   size="large"
                   target="_blank"

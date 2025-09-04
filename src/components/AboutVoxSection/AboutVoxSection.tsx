@@ -19,7 +19,7 @@ export default function AboutVoxSection() {
       description: 'Equipe qualificada'
     },
     {
-      number: '50+',
+      number: '10+',
       label: 'Projetos',
       description: 'Entregues com excelência'
     }

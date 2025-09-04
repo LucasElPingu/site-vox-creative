@@ -30,16 +30,7 @@ export default function Contato() {
     'Outros'
   ];
 
-  const teamContacts = [
-    {
-      name: 'Eduarda Magalhães',
-      position: 'CEO & Founder',
-      city: 'São Paulo - SP',
-      whatsapp: '5511952063578',
-      image: '👩‍💼',
-      specialty: 'Liderança e estratégia empresarial'
-    }
-  ];
+  const teamContacts = [];
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -240,7 +231,7 @@ export default function Contato() {
                     <div className={styles.contactIcon}>📱</div>
                     <div>
                       <strong>WhatsApp</strong>
-                      <p>(11) 95206-3578</p>
+                      <p>(11) 94954-8700</p>
                     </div>
                   </div>
                   
@@ -263,8 +254,8 @@ export default function Contato() {
 
                 <div className={styles.quickContact}>
                   <h4>Contato Rápido</h4>
-                  <Button 
-                    href="https://wa.me/5511952063578" 
+                  <Button
+                    href="https://wa.me/5511949548700"
                     variant="whatsapp"
                     size="large"
                     target="_blank"
@@ -278,17 +269,8 @@ export default function Contato() {
               <Card variant="bordered" className={styles.socialCard}>
                 <h4 className={styles.socialTitle}>Nossas Redes Sociais</h4>
                 <div className={styles.socialLinks}>
-                  <a href="https://instagram.com/voxcreative" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
+                  <a href="https://www.instagram.com/vox_creativ" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
                     📷 Instagram
-                  </a>
-                  <a href="https://facebook.com/voxcreative" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
-                    👥 Facebook
-                  </a>
-                  <a href="https://linkedin.com/company/voxcreative" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
-                    💼 LinkedIn
-                  </a>
-                  <a href="https://youtube.com/voxcreative" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
-                    🎥 YouTube
                   </a>
                 </div>
               </Card>
@@ -302,35 +284,30 @@ export default function Contato() {
         <div className={styles.container}>
           <div className={styles.sectionHeader}>
             <h2 className={styles.sectionTitle}>
-              Fale diretamente com nossa{' '}
-              <span className={styles.highlight}>CEO</span>
+              Fale conosco direto pelo <span className={styles.highlight}>WhatsApp</span>
             </h2>
             <p className={styles.sectionDescription}>
-              Atendimento personalizado e direto com nossa CEO, 
-              especializada em soluções digitais personalizadas.
+              Preferimos atendimento rápido pelo WhatsApp. Clique no botão abaixo para iniciar uma conversa com nossa equipe.
             </p>
           </div>
 
-          <div className={styles.teamGrid}>
-            {teamContacts.map((member, index) => (
-              <Card key={index} variant="elevated" className={styles.teamCard}>
-                <div className={styles.memberImage}>{member.image}</div>
-                <div className={styles.memberInfo}>
-                  <h4 className={styles.memberName}>{member.name}</h4>
-                  <p className={styles.memberPosition}>{member.position}</p>
-                  <p className={styles.memberCity}>{member.city}</p>
-                  <p className={styles.memberSpecialty}>{member.specialty}</p>
-                  <Button 
-                    href={`https://wa.me/${member.whatsapp}`}
-                    variant="whatsapp" 
-                    size="medium"
-                    target="_blank"
-                  >
-                    💬 WhatsApp
-                  </Button>
-                </div>
-              </Card>
-            ))}
+          <div className={styles.teamCta}>
+            <div className={styles.ctaContent}>
+              <h3 className={styles.ctaTitle}>Pronto para começar?</h3>
+              <p className={styles.ctaDescription}>
+                Envie uma mensagem pelo WhatsApp e nossa equipe retornará o mais rápido possível.
+              </p>
+              <div className={styles.ctaButtons}>
+                <Button
+                  href="https://wa.me/5511949548700"
+                  variant="whatsapp"
+                  size="large"
+                  target="_blank"
+                >
+                  💬 Falar no WhatsApp
+                </Button>
+              </div>
+            </div>
           </div>
         </div>
       </section>

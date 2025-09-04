@@ -25,7 +25,7 @@ Aqui na VOX não existe fórmula mágica. Existe estratégia com propósito.
 
 Se sua empresa quer se destacar de verdade, crescer e estar à frente de todos no mercado, vamos juntos!`,
       linkedin: '#',
-      whatsapp: '5511952063578'
+      whatsapp: '5511949548700'
     },
     {
       name: 'Laís Reis',
@@ -41,7 +41,7 @@ Trabalho para aliar criatividade e estratégia, entendendo o que torna cada marc
 
 Se você busca mais do que um visual bonito e quer entregar valor com verdade, estou pronta para criar com você.`,
       linkedin: '#',
-      whatsapp: '5511952063578'
+      whatsapp: '5511949548700'
     },
     {
       name: 'Thatiane',
@@ -55,7 +55,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor i
 
 *Este texto será substituído pelo conteúdo real assim que for enviado pela cliente.*`,
       linkedin: '#',
-      whatsapp: '5511952063578',
+      whatsapp: '5511949548700',
       isPlaceholder: true
     },
     {
@@ -70,7 +70,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor i
 
 *Este texto será substituído pelo conteúdo real assim que for enviado pela cliente.*`,
       linkedin: '#',
-      whatsapp: '5511952063578',
+      whatsapp: '5511949548700',
       isPlaceholder: true
     },
     {
@@ -81,7 +81,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor i
       specialties: ['Next.js', 'TypeScript', 'Spring Boot', 'SEO', 'Performance'],
       bio: `Desenvolvedor web especializado em criação de sites profissionais com foco em performance, design moderno e otimização para SEO. Trabalho com tecnologias como Next.js, TypeScript e Spring Boot, entregando soluções personalizadas para empreendedores e empresas que desejam fortalecer sua presença digital e conquistar mais clientes online.`,
       linkedin: '#',
-      whatsapp: '5511952063578'
+      whatsapp: '5511949548700'
     }
   ];
 

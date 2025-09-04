@@ -93,7 +93,7 @@ export default function AboutSection() {
         <div className={styles.statsSection}>
           <div className={styles.statsGrid}>
             <div className={styles.stat}>
-              <span className={styles.statNumber}>50+</span>
+              <span className={styles.statNumber}>10+</span>
               <span className={styles.statLabel}>Projetos</span>
               <span className={styles.statDescription}>Entregues com qualidade</span>
             </div>
